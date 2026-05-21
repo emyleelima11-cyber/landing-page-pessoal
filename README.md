@@ -1,24 +1,32 @@
-# Landing Page Pessoal
+# Currículo Online - Emy Lee Lima Dos Santos
 
-Este projeto foi desenvolvido como atividade do Senac.
+Este projeto foi desenvolvido como atividade acadêmica do Senac.
 
-## Objetivo
-Criar uma landing page pessoal no formato de currículo online e publicá-la utilizando diferentes métodos de hospedagem.
+## Objetivo do projeto
+
+Criar uma landing page pessoal no formato de currículo online, contendo informações profissionais, formação acadêmica e formas de contato.
 
 ## Tecnologias utilizadas
-- HTML
-- CSS
+
+- HTML5
+- CSS3
 - GitHub
 - GitHub Pages
 - Cloudflare Pages
 
 ## Conteúdo da página
-- Nome completo
+
 - Apresentação pessoal
-- Formação
-- Conhecimentos técnicos
-- Projetos e interesses
+- Sobre mim
+- Formação acadêmica
 - Contato
 
-## Autor
-Emy lee L.D.S
+## Estrutura do projeto
+
+```txt
+projeto/
+│── index.html
+│── style.css
+│── README.md
+│── images/
+      └── minhafoto.png

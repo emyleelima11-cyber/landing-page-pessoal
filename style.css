@@ -10,18 +10,20 @@ html{
 
 body{
     font-family: 'Poppins', sans-serif;
-    background: #0f172a;
-    color: white;
+    background: #0a0f1f;
+    color: #e5e7eb;
 }
 
-/* MENU */
+/* HEADER */
 
 header{
-    background: rgba(15, 23, 42, 0.95);
+    background: rgba(10, 15, 31, 0.95);
+    backdrop-filter: blur(10px);
     position: fixed;
     width: 100%;
     top: 0;
     z-index: 1000;
+    border-bottom: 1px solid rgba(255,255,255,0.08);
 }
 
 .container{
@@ -32,23 +34,27 @@ header{
 }
 
 .logo{
-    color: #38bdf8;
+    color: #d4af37;
+    font-weight: 700;
 }
+
+/* MENU */
 
 nav ul{
     display: flex;
     list-style: none;
-    gap: 25px;
+    gap: 30px;
 }
 
 nav a{
     text-decoration: none;
-    color: white;
+    color: #e5e7eb;
     transition: 0.3s;
+    font-weight: 500;
 }
 
 nav a:hover{
-    color: #38bdf8;
+    color: #d4af37;
 }
 
 /* HOME */
@@ -58,8 +64,8 @@ nav a:hover{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 100px 10%;
-    gap: 40px;
+    padding: 120px 10%;
+    gap: 50px;
 }
 
 .hero-text{
@@ -67,40 +73,47 @@ nav a:hover{
 }
 
 .hero h1{
-    font-size: 50px;
+    font-size: 55px;
+    color: white;
 }
 
 .hero h3{
-    color: #38bdf8;
-    margin: 10px 0;
+    color: #d4af37;
+    margin: 15px 0;
 }
 
 .hero p{
     margin: 20px 0;
-    line-height: 1.7;
+    line-height: 1.8;
+    color: #cbd5e1;
 }
 
+/* FOTO */
+
 .hero-image img{
-    width: 300px;
-    border-radius: 20px;
-    border: 4px solid #38bdf8;
+    width: 320px;
+    height: 320px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid #d4af37;
+    box-shadow: 0 0 40px rgba(212, 175, 55, 0.25);
 }
 
 /* BOTÃO */
 
 .btn{
     display: inline-block;
-    background: #38bdf8;
-    color: black;
-    padding: 12px 24px;
-    border-radius: 10px;
+    background: #d4af37;
+    color: #0a0f1f;
+    padding: 14px 28px;
+    border-radius: 12px;
     text-decoration: none;
     font-weight: bold;
     transition: 0.3s;
 }
 
 .btn:hover{
-    transform: translateY(-3px);
+    transform: translateY(-5px);
 }
 
 /* SEÇÕES */
@@ -110,33 +123,19 @@ nav a:hover{
 }
 
 .section h2{
-    font-size: 35px;
-    margin-bottom: 20px;
-    color: #38bdf8;
+    font-size: 38px;
+    margin-bottom: 25px;
+    color: #d4af37;
 }
 
 .dark{
-    background: #1e293b;
+    background: #111827;
 }
 
 .card{
-    background: #334155;
-    padding: 25px;
-    border-radius: 15px;
-}
-
-.skills{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 15px;
-}
-
-.skills span{
-    background: #38bdf8;
-    color: black;
-    padding: 10px 20px;
-    border-radius: 30px;
-    font-weight: bold;
+    background: #1f2937;
+    padding: 30px;
+    border-radius: 18px;
 }
 
 .buttons{
@@ -145,10 +144,12 @@ nav a:hover{
     flex-wrap: wrap;
 }
 
+/* FOOTER */
+
 footer{
     text-align: center;
-    padding: 20px;
-    background: #020617;
+    padding: 25px;
+    background: #050814;
 }
 
 /* RESPONSIVO */
@@ -158,6 +159,7 @@ footer{
     .hero{
         flex-direction: column;
         text-align: center;
+        padding-top: 150px;
     }
 
     nav ul{
@@ -165,10 +167,15 @@ footer{
     }
 
     .hero h1{
-        font-size: 35px;
+        font-size: 38px;
     }
 
     .hero-image img{
-        width: 220px;
+        width: 230px;
+        height: 230px;
+    }
+
+    .buttons{
+        justify-content: center;
     }
 }
