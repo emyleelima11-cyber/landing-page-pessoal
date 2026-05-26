@@ -1,181 +1,46 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-html{
-    scroll-behavior: smooth;
-}
-
 body{
-    font-family: 'Poppins', sans-serif;
-    background: #0a0f1f;
-    color: #e5e7eb;
-}
-
-/* HEADER */
-
-header{
-    background: rgba(10, 15, 31, 0.95);
-    backdrop-filter: blur(10px);
-    position: fixed;
-    width: 100%;
-    top: 0;
-    z-index: 1000;
-    border-bottom: 1px solid rgba(255,255,255,0.08);
-}
-
-.container{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 10%;
-}
-
-.logo{
-    color: #d4af37;
-    font-weight: 700;
-}
-
-/* MENU */
-
-nav ul{
-    display: flex;
-    list-style: none;
-    gap: 30px;
-}
-
-nav a{
-    text-decoration: none;
-    color: #e5e7eb;
-    transition: 0.3s;
-    font-weight: 500;
-}
-
-nav a:hover{
-    color: #d4af37;
-}
-
-/* HOME */
-
-.hero{
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 120px 10%;
-    gap: 50px;
-}
-
-.hero-text{
-    max-width: 600px;
-}
-
-.hero h1{
-    font-size: 55px;
+    background: #111;
     color: white;
 }
 
-.hero h3{
-    color: #d4af37;
-    margin: 15px 0;
+.logo{
+    color: #ffffff;
 }
 
-.hero p{
-    margin: 20px 0;
-    line-height: 1.8;
-    color: #cbd5e1;
-}
-
-/* FOTO */
-
-.hero-image img{
-    width: 320px;
-    height: 320px;
-    object-fit: cover;
-    border-radius: 50%;
-    border: 5px solid #d4af37;
-    box-shadow: 0 0 40px rgba(212, 175, 55, 0.25);
-}
-
-/* BOTÃO */
-
-.btn{
-    display: inline-block;
-    background: #d4af37;
-    color: #0a0f1f;
-    padding: 14px 28px;
-    border-radius: 12px;
-    text-decoration: none;
-    font-weight: bold;
-    transition: 0.3s;
-}
-
-.btn:hover{
-    transform: translateY(-5px);
-}
-
-/* SEÇÕES */
-
-.section{
-    padding: 100px 10%;
+.hero h1{
+    color: #ffffff;
 }
 
 .section h2{
-    font-size: 38px;
-    margin-bottom: 25px;
-    color: #d4af37;
+    color: #f5f5f5;
+}
+
+.btn{
+    background: #2a2a2a;
+    color: white;
+}
+
+.btn:hover{
+    background: #444;
 }
 
 .dark{
-    background: #111827;
+    background: #1b1b1b;
 }
 
 .card{
-    background: #1f2937;
-    padding: 30px;
-    border-radius: 18px;
+    background: #222;
+    border: 1px solid rgba(255,255,255,0.1);
 }
 
-.buttons{
-    display: flex;
-    gap: 15px;
-    flex-wrap: wrap;
+.card h3{
+    color: #ffffff;
 }
 
-/* FOOTER */
+card span{
+    color: #d1d5db;
+}
 
 footer{
-    text-align: center;
-    padding: 25px;
-    background: #050814;
-}
-
-/* RESPONSIVO */
-
-@media(max-width: 900px){
-
-    .hero{
-        flex-direction: column;
-        text-align: center;
-        padding-top: 150px;
-    }
-
-    nav ul{
-        display: none;
-    }
-
-    .hero h1{
-        font-size: 38px;
-    }
-
-    .hero-image img{
-        width: 230px;
-        height: 230px;
-    }
-
-    .buttons{
-        justify-content: center;
-    }
+    background: #0a0a0a;
 }
